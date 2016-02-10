@@ -14,7 +14,7 @@
 
 use strict;
 use warnings;
-use vars qw($VERSION %IRSSI);
+use vars qw($VERSION %IRSSI %DEER_SYMBOLS);
 
 use String::IRC;
 use Irssi qw(command_bind active_win);
@@ -27,11 +27,10 @@ $VERSION = "0.0.0";
     license	=> 'Apache 2.0',
     url		=> 'http://github.com/GeneralUnRest/',
     changed	=> 'Sun 09 Feb 17:00 EST 2016',
-    changes	=> 'NA',
+    changes	=> 'N/A',
 );
-
 # n to soon be deprecated
-my %DEER_SYMBOLS = (
+%DEER_SYMBOLS = (
 	0 => String::IRC->new("@")->white('white'),
 	1 => String::IRC->new("@")->black('black'),
 	2 => String::IRC->new("@")->navy('navy'),
